@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+<div class = "names">
+  {% comment %} <img src = "images/bg.png"> {% endcomment %}
+   <nav> 
+      <ul>
+        {% for name in names %}
+        <li><a href = "/{{name}}">{{name}}</a></li>
+        {% endfor %}
+      </ul>
+    </a>
+</div>
+{% endblock content%}
+

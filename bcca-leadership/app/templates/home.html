@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+{% comment %} <p>Click each team name to learn more!</p> {% endcomment %}
+<div class = "names">
+  <nav> 
+      <ul>
+        {% for name in names %}
+        <li><a href = "/{{name}}">{{name}}</a></li>
+        {% endfor %}
+      </ul>
+    </a>
+</div>
+</main>
+{% endblock content%}
+

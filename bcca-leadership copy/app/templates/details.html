@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% comment %} Management HTML {% endcomment %}
+
+{% block content%}
+{% if something == "Management" %}
+<div class = "background">
+     <h1><u>Management Team</u></h1>
+     <h2>{{Management.description}}</h2>
+     <div class = "list">
+     {% for members in Management.members %}
+     <li>{{members}}</li>
+     {% endfor %}
+     </div>
+</div>
+    
+{% comment %} Documentation HTML {% endcomment %}
+
+{% elif something == "Documentation" %}
+<div  class = "background">
+     <h1><u>Documentation Team</u></h1>
+     <h2>{{Documentation.description}}</h2>
+     <div class = "list">
+     {% for members in Documentation.members %}
+     <li>{{members}}</li>
+     {% endfor %}
+     </div>
+</div>
+
+{% comment %} Procurement HTML {% endcomment %}
+
+{% elif something == "Procurement" %}
+<div  class = "background">
+     <h1><u>Procurement Team</u></h1>
+     <h2>{{Procurement.description}}</h2>
+     <div class = "list">
+     {% for members in Procurement.members %}
+     <li>{{members}}</li>
+     {% endfor %}
+     </div>
+</div>
+
+{% comment %} Community HTML {% endcomment %}
+{% elif something == "Community" %}
+<div  class = "background">
+     <h1><u>Community Team</u></h1>
+     <h2>{{Community.description}}</h2>
+     <div class = "list">
+     {% for members in Community.members %}
+     <li>{{members}}</li>
+     {% endfor %}
+     </div>
+</div>
+ {% endif %}
+ {% endblock content%}

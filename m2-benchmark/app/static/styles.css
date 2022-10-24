@@ -1,0 +1,206 @@
+/* body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    color:rgb(44, 74, 29); dark green
+    color:rgb(77, 131, 50); green 
+    color:rgb(110, 154, 88); lime green
+    color:rgb(63, 41, 23); dark brown
+    color:rgb(98, 65, 35); brown
+    color:rgb(150, 106, 62); light brown
+
+  } */
+
+  body {
+    background-image: url("images/minecraft.png");
+    background-color: rgba(57, 52, 38, 0.946);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin: 0; */
+}
+
+.header {
+    background-color: rgb(40, 37, 31);
+    padding: 30px;
+    text-align: center;
+    opacity: 70%;
+}
+
+
+.header nav a {
+    color:rgb(100, 221, 30);
+    font-size: 35px;
+    text-decoration: none; 
+    border-style:ridge;
+    border-width: 8px;
+    padding: 1%;
+}
+
+.header nav a:hover {
+    color: #fff;
+    background: rgb(26, 83, 94);
+    transition: .5s ease;
+}
+
+.names nav a:hover{
+    color:rgb(150, 106, 62);
+    transition: .5s ease;
+}
+
+.names nav ul a {
+    color:rgb(63, 41, 23);
+    font-size: 35px;
+    background-color: rgba(206, 199, 193, 0.265);
+    list-style-type: none;
+    text-decoration: none;
+    border-radius: 45%;
+    padding: 10px 10px;
+    line-height: 250%;
+    
+    /* border-style: ridge; */
+    
+}
+.names li {
+    list-style-type: none;
+    text-align: center;
+    /* display:inline;
+    margin-left: 7.5%; */
+}
+
+/* .background {
+    background-color: rgba(52, 42, 33, 0.843);
+    background-size: 1000% 1000%;
+    border-color: rgb(126, 164, 194);
+    border-style:ridge;
+    border-width: 20px;
+    padding: 80px 10px ;
+} */
+
+h1 {
+    font-size: 50px;
+    color:rgb(44, 74, 29);
+    text-align: center;
+}
+
+/* team descriptions */
+h2 {
+    font-size: 35px;
+    color:rgb(77, 131, 50);
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%; 
+}
+
+.list {
+    font-size: 30px;
+    color:rgb(233, 219, 25);
+    display: table;
+    margin-left: 80%;
+    direction: rtl;
+    margin-top: 5%;
+    list-style-type: square;
+}
+
+.list-2 {
+    font-size: 30px;
+    color:rgb(233, 219, 25);
+    display: table;
+    margin-left: 10%;
+    text-align: center;
+    list-style-type: square;
+}
+
+.meadow {
+    background-image: url("images/meadow.png");
+    background-color: rgba(57, 52, 38, 0.946);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+    /* margin:; */
+}
+
+.taiga {
+    background-image: url("images/taiga.png");
+    background-color: rgba(57, 52, 38, 0.946);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+.warped {
+    background-image: url("images/forest.png");
+    background-color: rgba(57, 52, 38, 0.946);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+.ocean {
+    background-image: url("images/ocean.png");
+    background-color: rgba(57, 52, 38, 0.946);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+.caves {
+    background-image: url("images/caves.png");
+    background-color: rgba(57, 52, 38, 0.946);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+p  {
+    font-size: 20px;
+    color:rgb(44, 74, 29);
+    display: table;
+    margin-left: 5%;
+    padding: 1%;
+
+}
+
+.thought {
+  display:flex;
+  background-color:rgba(77, 125, 85, 0.957);
+  padding: 5px;
+  border-radius:30px;
+  min-width:40px;
+  max-width:220px;
+  min-height:40px;
+  margin:20px;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.thought:before,
+.thought:after {
+  content:"";
+  background-color:rgba(77, 125, 85, 0.957);
+  border-radius:50%;
+  display:block;
+  position:absolute;
+  z-index:-1;
+}
+.thought:before {
+  width:44px;
+  height:44px;
+  top:-12px;
+  left:28px;
+  box-shadow:-50px 30px 0 -12px rgba(77, 125, 85, 0.957);
+}
+.thought:after {
+  bottom:-10px;
+  right:26px;
+  width:30px;
+  height:30px;
+  box-shadow:40px -34px 0 0 rgba(77, 125, 85, 0.957),
+             -28px -6px 0 -2px rgba(77, 125, 85, 0.957),
+             -24px 17px 0 -6px rgba(77, 125, 85, 0.957),
+             -5px 25px 0 -10px rgba(77, 125, 85, 0.957);
+  
+}
+

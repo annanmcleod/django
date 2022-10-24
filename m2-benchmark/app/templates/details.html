@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% comment %} Meadow HTML {% endcomment %}
+
+{% block content%}
+{% if minecraft == "Meadow" %}
+<div class = "meadow">
+     <h1><u>Meadow</u></h1>
+     <h2>{{Meadow.description}}</h2>
+     <div class = "list">
+          {% for mobs in Meadow.mobs %}
+          <li>{{mobs}}</li>
+          {% endfor %}
+     </div>
+     <ul class = "list-2">
+          {% for plants in Meadow.plants%}
+          <li>{{plants}}</li>
+          {% endfor%}
+     </ul>
+</div>
+{% endif %}
+    
+{% comment %} Taiga HTML {% endcomment %}
+
+{% if minecraft == "Taiga" %}
+<div  class = "taiga">
+     <h1><u>Taiga</u></h1>
+     <h2>{{Taiga.description}}</h2>
+     <div class = "list">
+          {% for mobs in Taiga.mobs %}
+          <li>{{mobs}}</li>
+          {% endfor %}
+     </div>
+     <ul class = "list-2">
+          {% for plants in Taiga.plants%}
+          <li>{{plants}}</li>
+          {% endfor%}
+     </ul>
+</div>
+{% endif %}
+
+{% comment %} Warped Forest HTML {% endcomment %}
+
+{% if minecraft == "Warped_Forest" %}
+<div  class = "warped">
+     <h1><u>Warped Forest</u></h1>
+     <h2>{{Warped_Forest.description}}</h2>
+     <div class = "list">
+          {% for mobs in Warped_Forest.mobs %}
+          <li>{{mobs}}</li>
+          {% endfor %}
+     </div>
+     <ul class = "list-2">
+          {% for plants in Warped_Forest.plants%}
+          <li>{{plants}}</li>
+          {% endfor%}
+     </ul>
+</div>
+{% endif %}
+
+{% comment %} Warm Ocean HTML {% endcomment %}
+{% if minecraft == "Warm_Ocean" %}
+<div  class = "ocean">
+     <h1><u>Warm Ocean</u></h1>
+     <h2>{{Warm_Ocean.description}}</h2>
+     <div class = "list">
+          {% for mobs in Warm_Ocean.mobs %}
+          <li>{{mobs}}</li>
+          {% endfor %}
+     </div>
+     <ul class = "list-2">
+          {% for plants in Warm_Ocean.plants%}
+          <li>{{plants}}</li>
+          {% endfor%}
+     </ul>
+</div>
+
+{% endif %}
+ {% comment %} Lush Caves HTML {% endcomment %}
+{% if minecraft == "Lush_Caves" %}
+<div  class = "caves">
+     <h1><u>Lush Caves</u></h1>
+     <h2>{{Lush_Caves.description}}</h2>
+     <div class = "list">
+          {% for mobs in Lush_Caves.mobs %}
+          <li>{{mobs}}</li>
+          {% endfor %}
+     </div>
+     <ul class = "list-2">
+          {% for plants in Lush_Caves.plants%}
+          <li>{{plants}}</li>
+          {% endfor%}
+     </ul>
+</div>
+ {% endif %}
+ {% endblock content%}

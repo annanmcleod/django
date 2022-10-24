@@ -1,0 +1,98 @@
+/* body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  } */
+
+body {
+    background-image: url("images/bg.png");
+    background-color: rgba(57, 52, 38, 0.946);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(40, 37, 31);
+    padding: 30px;
+    text-align: center;
+    opacity: 70%;
+}
+
+.header nav a {
+    color:rgb(30, 177, 221);
+    font-size: 35px;
+    text-decoration: none; 
+}
+
+.header nav a:hover {
+    color: #fff;
+    background: rgb(26, 83, 94);
+    transition: .5s ease;
+}
+
+.names nav a:hover{
+    color: #fff;
+    background: rgb(154, 229, 243);
+    transition: .5s ease;
+}
+
+.names nav ul a {
+    color:rgb(46, 33, 23);
+    font-size: 35px;
+    background-color: rgba(206, 199, 193, 0.265);
+    list-style-type: none;
+    border-radius: 5%;
+    padding: 10px 10px;
+    line-height: 300%;
+    
+
+}
+.names li {
+    display:inline;
+    margin-left: 7.5%;
+}
+
+.background {
+    background-color: rgba(52, 42, 33, 0.843);
+    background-size: 1000% 1000%;
+    border-color: rgb(126, 164, 194);
+    border-style:ridge;
+    border-width: 20px;
+    padding: 80px 10px ;
+}
+
+p {
+    font-size: 30px;
+    color:rgb(91, 128, 195);
+    background-color: rgb(176, 213, 211);
+    background-size: 2px 2px;
+    display: table;
+    margin-left: 34.5%;
+}
+
+h1 {
+    font-size: 50px;
+    color:rgb(250, 250, 250);
+    text-align: center;
+}
+
+/* team descriptions */
+h2 {
+    font-size: 35px;
+    color:rgb(131, 155, 199);
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%; 
+}
+
+.list li {
+    font-size: 30px;
+    color:rgb(151, 176, 193);
+    display: table;
+    margin-left: 46.5%;
+}
+
+
+
+

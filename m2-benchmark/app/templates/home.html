@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+<div class = "thought">
+<p>The prettiest biomes to explore await you!</p>
+</div>
+<div class = "names">
+  <nav> 
+      <ul>
+        {% for name in names %}
+        <li><a href = "/{{name}}">{{name}}</a></li>
+        {% endfor %}
+      </ul>
+    </a>
+</div>
+</main>
+{% endblock content%}

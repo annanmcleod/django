@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>BCCA Leadership Teams Viewer</title>
+   <link rel="stylesheet" href= "{% static "styles.css" %}"/>
+ </head>
+
+ <body>
+  <div class = "home-page">
+    <header class = "header"> 
+    <nav><a href ="/">BCCA Leadership Team Viewer</a></nav>
+    </header>
+  </div>
+ </body>
+ <main>
+  {% block content%}{%endblock content%}
+</main>
+ 
+ </html>
